@@ -1,0 +1,220 @@
+.positiveidcard,.backofidcard ,.facePic{
+	width: 6.9rem;
+	border: 1px solid #d7d7d7;
+	height: 4rem;
+	background-color: #fff;
+	border-radius: 0.1rem;
+	color: #999;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 0.4rem;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+.positiveidcard ul,.backofidcard ul,.facePic ul{
+	margin-top: 1.3rem;
+	font-size: 0.3rem;
+	color: #999;
+	margin-bottom: 0.4rem;
+}
+.add_icon{
+	margin: 0.05rem 0;
+	height: 0.5rem;
+	position: relative;
+}
+.add_icon:after{
+	content: "";
+	width: 2px;
+	height: 0.5rem;
+	background-color: #999;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -0.25rem;
+	margin-left: -1px;
+}
+.add_icon:before{
+	content:"";
+	height: 2px;
+	width: 0.5rem;
+	background-color: #999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -0.25rem;
+	margin-top: -1px;
+	
+}
+.positiveidcard img.positiveidcardImg,.backofidcard img.backofidcardImg,.facePic img.facePicImg {
+	height: 4rem;
+}
+.positiveidcardImg,.backofidcardImg,.facePicImg{
+	width: 6.9rem;
+}
+
+.positiveidcard ul li img,.backofidcard ul li img,.facePic ul li img {
+	width: 0.6rem;
+	height: 0.52rem;
+}
+.cardPicImg {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.cardPicImgMask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.3);
+}
+
+.cardPicImgMask img {
+	position: relative;
+	top: 1rem;
+	left: 2rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+.cardPicImgUpload {
+	position: absolute;
+	left: 10%;
+	bottom:1rem;
+	width: 80%;
+}
+
+.cardPicImgUpload span,.cardPicImgUpload font {
+	color: #fff;
+	font-size: 0.3rem
+}
+
+.cardPicImgUpload font {
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+
+.cardPicImgUpload .cardPicImgUploadBg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: #3a83d7;
+}
+.nextstep{
+	background: #DBDBDB;
+	border: 1px solid #d7d7d7;
+	color: #fff;
+}
+.allowClickNextBtn {
+	background: #3a83d7;
+	color: #fff;
+}
+
+.cancel{
+	position: fixed;
+	width: 6.9rem;
+	background-color: #fff;
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+	color: #3a83d7;
+	z-index: 11;
+	font-size:0.4rem;
+	left: 50%;
+	margin-left: -3.45rem;
+}
+.photo_box{
+	height: 2rem;
+	border-radius: 0.2rem;
+	position: fixed;
+	bottom: 1.4rem;
+	left: 50%;
+	margin-left: -3.45rem;
+	z-index: 11;
+	overflow: hidden;
+}
+.takephoto,.Photogallery{
+	width: 6.9rem;
+	background-color: #fff;
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+	color: #3a83d7;
+	font-size:0.4rem;
+}
+.cancel {
+	bottom: 0;
+	border-radius: 0.2rem;
+	margin-bottom: 0.3rem;
+}
+.takephoto {
+	border-bottom: 1px solid #d7d7d7;
+}
+
+/*证书协议*/
+
+.mask2 {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.DigitalAgreement {
+	display: none;
+    position: fixed;
+    z-index: 100;
+    width: 6.9rem;
+    height: 80%;
+    left: 50%;
+    margin-left: -3.45rem;
+    background: #fff;
+    padding: 0.1rem 0.3rem;
+    border: 1px solid #000;
+    border-radius: 0.07rem;
+    background: #F3F3F3;
+    top: 1.5rem;
+    box-sizing: border-box;
+}
+
+.DigitalAgreement .title {
+	font-weight: bolder;
+	text-align: center;
+	font-size: 0.36rem;
+	position: relative;
+}
+
+.DigitalAgreement .title span {
+	position: absolute;
+    top: -0.3rem;
+    right: -0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(../images/close.png) no-repeat center center;
+    background-size: contain;
+    background-color: #fff;
+    z-index: 20;
+}
+
+
+.DigitalAgreement .content {
+	font-size: 0.26rem;
+	line-height: 0.44rem;
+	height: 95%;
+	overflow: auto;
+}

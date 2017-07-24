@@ -1,0 +1,20 @@
+.address{
+	width: 100%;
+	border-bottom: 1px solid #d7d7d7;
+	font-size: 0.34rem;
+	min-height: 1rem;
+	background-color: #fff;
+	padding: 0 0.3rem;
+	box-sizing: border-box;
+}
+.address label{
+	float: left;
+	width: 1.6rem;
+    color: #999;
+    line-height: 1rem;
+}
+.address p{
+	float: left;
+	width: 5rem;
+	margin: 0.28rem 0;
+}

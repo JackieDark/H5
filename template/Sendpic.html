@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>上传身份照片</title>
+	<script type="text/javascript">
+    		(function(doc, win, undefined) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(clientWidth === undefined) return;
+						docEl.style.fontSize =(clientWidth / 750)*100 + 'px';
+						docEl.style.display = "block";
+					};
+				if(doc.addEventListener === undefined) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+    </script>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/sendpic.css">
+</head>
+<body>
+	<header>
+		<div class="title">
+			<span id="backTo"></span>
+			<span>上传身份照片</span>
+		</div>
+	</header>
+	<div class="wrap">
+		<div class="description">
+			<p class="top_tip" style="text-indent: 0;">根据证监部门规定，为确保安全，需上传在有效期内的二代身份证正反面照片。</p>
+		</div>
+
+		<div class="positiveidcard uploadDiv" data-type="1">
+            <div class="cardPicImg">
+                <div class="cardPicImgDiv"></div>
+                <div class="cardPicImgMask"><img src="../images/water.png" alt=""></div>
+                <div class="cardPicImgUpload">
+                    <span>正在上传<i>0</i>%</span>
+                    <font>上传成功</font>
+                    <div class="cardPicImgUploadBg"></div>
+                </div>
+            </div>
+			<ul>
+				<li><img src="../images/sendpic/idcard.png"/></li>
+				<li class="add_icon">
+				</li>
+				<li>身份证正面照片</li>
+			</ul>
+	    </div>
+		<div class="backofidcard uploadDiv" data-type="2">
+            <div class="cardPicImg">
+                <div class="cardPicImgDiv"></div>
+                <div class="cardPicImgMask"><img src="../images/water.png" alt=""></div>
+                <div class="cardPicImgUpload">
+                    <span>正在上传<i>0</i>%</span>
+                    <font>上传成功</font>
+                    <div class="cardPicImgUploadBg"></div>
+                </div>
+            </div>
+			<ul>
+				<li><img src="../images/sendpic/idcard.png"/></li>
+				<li class="add_icon"></li>
+				<li>身份证反面照片</li>
+			</ul>
+		</div>
+        <div class="facePic uploadDiv " style="display: block;" data-type="3">
+            <div class="cardPicImg">
+                <div class="cardPicImgDiv"></div>
+                <div class="cardPicImgMask"></div>
+                <div class="cardPicImgUpload">
+                    <span>正在上传<i>0</i>%</span>
+                    <font>上传成功</font>
+                    <div class="cardPicImgUploadBg"></div>
+                </div>
+            </div>
+            <ul>
+                <li><img src="../images/Addface/face.png"/></li>
+                <li class="add_icon">
+                </li>
+                <li>本人免冠头像</li>
+            </ul>
+        </div>
+		<div class="photo_box">
+			<div class="takephoto hide">拍照</div>
+			<div class="Photogallery hide">从相册中选择</div>
+		</div>
+		<div class="cancel hide">取消</div>
+		<div class="certificate"><input type="checkbox" checked style="display: none;" id="agree"><label for="agree">我已认真阅读并知晓</label><a href="javascript:void(0);">个人数字证书申请责任书</a></div>
+		<div class="nextstep">下一步</div>
+    <div class="mask hide">&nbsp;</div>
+
+	<!--</form>-->
+    <div class="mask2">&nbsp;</div>
+    <div class="DigitalAgreement" data-get="">
+        <div class="title"><p style="text-indent: 0;">个人数字证书申请责任书</p><span></span></div>
+        <div class="content"></div>
+    </div>
+	</div>
+	
+<script type="text/javascript" src='../scripts/zepto.js'></script>
+<script type="text/javascript" src='../scripts/basic.js'></script>
+<script type="text/javascript" src='../scripts/sendpic.js'></script>
+</body>
+</html>

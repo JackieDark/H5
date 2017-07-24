@@ -1,0 +1,133 @@
+.warnmsg{
+    font-size: 0.3rem;
+    color: #f64d54;
+    margin-top: 0.2rem;
+    padding: 0rem 0.3rem;
+}
+
+.agreementList{ display: none;}
+.econtractContent{
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y:auto; 
+}
+.bankTipMsg{
+   	background-color: #fff;
+    border-radius: 0.1rem;
+    top: 1rem;
+    font-size: 0.32rem;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	width: 5.3rem;
+	height: auto;
+	z-index: 20;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.dialogtitle{
+    font-size: 0.36rem;
+    width: 100%;
+    text-align: center;
+    color: #222;
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.imgsize{
+    position: absolute;
+    top:50%;
+    margin-top: -.16rem;
+    right: .9rem;
+}
+
+.imgbanknoul{
+    height: 1.3rem;
+    overflow: hidden;
+}
+
+.imgbankno ul li img{
+    width:0.9rem;
+    height:0.9rem;
+    margin: 0.1rem;
+    display: block;
+    float: left;
+}
+.bankName{
+    color: #333;
+    font-size: 0.32rem;
+}
+.bankPsw{
+    border-bottom: none;
+    border-top: 1px solid #d7d7d7;
+}
+.bankNo{
+    font-size: 0.32rem;
+    color: #666;
+}
+
+.bankPsw label{
+    width: 1rem;
+    color: #333;
+}
+
+.bankPsw input{
+    width: 2.7rem;
+    border: none;
+}
+
+.bankPsw img{
+    width: 0.6rem;
+    height: 0.4rem;
+}
+
+.bankTip{
+	padding: 0.2rem;
+    color: #3a83d7;
+    font-size: 0.24rem;
+    border-top: 1px solid #d7d7d7;
+}
+.outbox{
+	display: table;
+	height: 1.3rem;
+}
+.inner_box{
+	display: table-cell;
+	vertical-align: middle;
+}
+.dialogbtn{
+   	width: 100%;
+    text-align: center;
+    color: #fff;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.36rem;
+    border-top: 1px solid #d7d7d7;
+}
+.dialogbtn div{
+	width: 50%;
+	float: left;
+}
+.turnback{
+    color: #666;
+    border-right: 1px solid #d7d7d7;
+    margin-right: -1px;
+}
+
+.suretoNext{
+    color: #3a83d7;
+}
+
+#psword p{display: inline;}
+.pswordGB{display: none;}
+
+#showPsw img{
+
+    width: 0.5rem;
+    height: 0.4rem;
+    float: right;
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,57 @@
+.component{
+    width: 100%;
+    padding: 0.1rem 0.3rem;
+    box-sizing: border-box;
+}
+.infoDiv{
+	border-bottom: 1px solid #d7d7d7;
+}
+.valuedate input{ width:2rem;text-align: center;}
+.valuedate span{ display:inline-block; width:0.1rem; text-align: center;}
+.accountIntegrity label{font-size: 0.34rem;width: 1.7rem;}
+#integrityDiv{
+    display: none;
+    color: #fefefe;
+    font-size: 0.34rem;
+    position: absolute;
+    z-index: 100;
+    top: 65%;
+    left: 6%;
+    padding: 4%;
+    width: 80%;
+    border-radius: 4%;
+    background: rgba(0,0,0,.6);
+}
+#integrityDiv ul li{
+    background: url(../images/TestPaper/radiouncheck.png) no-repeat left center;
+    background-size: 0.3rem 0.3rem;
+    padding:0.2rem 0.2rem 0.2rem 0.5rem;
+    margin-left: 0.1rem;
+}
+#integrity input{
+    border-style: none;
+    height: 90%;
+}
+
+.workUnit{
+	line-height: 1rem;
+	font-size: 0.34rem;
+	border-bottom: 1px solid #d7d7d7;
+	width: 100%;
+    height: 1rem;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.workUnit label{
+	width: 1.6rem;
+    display: inline-block;
+    color: #999;
+    
+}
+
+.workUnit input{
+	width: 4.7rem;
+    border: none;
+    color: #333;
+}

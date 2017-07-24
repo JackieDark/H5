@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>风险测评结果</title>
+	<script type="text/javascript">
+        (function(doc, win, undefined) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if(clientWidth === undefined) return;
+                    docEl.style.fontSize =(clientWidth / 750)*100 + 'px';
+                    docEl.style.display = "block";
+                };
+            if(doc.addEventListener === undefined) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false)
+        })(document, window);
+	</script>
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/style.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/TestPaperResult.css">
+</head>
+<body>
+<header>
+	<div class="title">
+		<span id="backTo"></span>
+		<span>风险测评结果</span>
+	</div>
+</header>
+<div class="wrap">
+	<div class=""  id="statusInquiry">
+		<div class="titleAudit">
+			<span>投资者风险评估结果确认</span>
+		</div>
+		<div class="score">
+			您的风险测评分数为：<span></span>  分
+		</div>
+		<div class="tableMsg">
+			<table>
+				<tr>
+					<td>风险等级</td>
+					<td id="riskGrade"><span></span>&nbsp;&nbsp;&nbsp;<a href="Testpaper.html">重新测评</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>拟投资期限</td>
+					<td id="timeHorizon"  colspan="2"></td>
+				</tr>
+				<tr>
+					<td>拟投资品种</td>
+					<td  id="typeInvest" colspan="2"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="tipbankMsg">
+		温馨提示：本公司向您销售的金融产品或提供的金融服务将以您的风险承受能力等级和投资品种、期限为基础，若您提供的信息发生任何重大变化，您都应当及时通知本公司
+	</div>
+	<div class="certificate">
+		<input type="checkbox" checked style="display: none;" id="agree">
+		<label for="agree">我已认真阅读并知晓</label>
+		<a href="javascript:void(0);"><<投资者风险承受能力评估结果告知函>></a>
+	</div>
+	<div class="nextstep">下一步</div>
+	<div class="mask" style="display: none;">&nbsp;</div>
+	<div class="DigitalAgreement" data-get="">
+		<div class="title"><span></span></div>
+		<div class="content"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src='../scripts/zepto.js'></script>
+<script type="text/javascript" src='../scripts/basic.js'></script>
+<!--<script type="text/javascript" src='../scripts/TestPaperResult.js'></script>-->
+</body>
+</html>

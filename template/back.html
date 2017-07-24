@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>返回</title>
+	<link rel="stylesheet" href="../styles/common.css">
+	<style type="text/css">
+		header div {width: 95%; background-color: #007aff;height: 40px;line-height: 40px;padding-left: 5%;font-size: 16px;position:fixed;}
+		#backTo{ display: inline-block;width: 10%;}
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+			<span id="backTo"><img src="../images/back.png" width="10" height="16" /></span>
+			<span>返回</span>
+		</div>
+	</header>
+
+	<div class="iframeDiv" style="padding-top: 40px;">
+		<iframe class="innerHtml" frameborder="no" width="750" height="500"></iframe>
+	</div>
+
+	<script type="text/javascript" src='../scripts/zepto.js'></script>
+	<script type="text/javascript" src='../scripts/basic.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			//返回事件(返回上一页)
+			$('#backTo').on('click',function(){
+				var openResult = sessionStorage.getItem("openResult");
+				if(openResult != "true")
+					localStorage.setItem("success","success");
+				else
+					sessionStorage.setItem("back","true");
+				window.location.href = 'OpenAccountResult.html';
+			});
+
+			var url=location.href;
+			var urlSrc = getParam("url");
+			$(".innerHtml").attr("src",urlSrc);
+			$(".innerHtml").css("width","100%");
+			var pHeight = $(window).height()+50;
+			$(".innerHtml").css("height",pHeight);
+		});
+	</script>
+</body>

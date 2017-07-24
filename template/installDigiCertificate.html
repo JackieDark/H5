@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>安装数字证书</title>
+	<link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/installDigiCertificate.css">
+</head>
+<body>
+	<header>
+		<div>
+			<span id="backTo"><img src="../images/back.png" width="10" height="16" /></span>
+			<span>安装数字证书</span>
+		</div>
+	</header>
+	<div class="wrap">
+	<div class="cowPic hide" id="successCow">
+		<img src="../images/digitallCertificate/successcow.png"/>
+	</div>
+	
+	<div class="installing hide"><span>正在安装数字证书...</span></div>
+	<div class="successbtn hide">
+		<div class="installsuccess"><span>安装成功！</span></div>
+	    <div class="idcardpsw"><span>数字证书默认密码为身份证后六位</span></div>
+		<div class="nextstep"><span>下一步</span></div>
+	</div>
+
+	<div  class="failbtn">
+		<div class="cowPic" id="failCow"><img src="../images/digitallCertificate/failcow.png"></div>
+		<div class="installfail"><span>安装失败！</span></div>
+		<div>
+			<div class="reInstall" id="reInstall"><span>点击重新安装</span></div>
+			<div  class="linkService" id="linkService"><span>联系客服解决</span></div>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript" src='../scripts/zepto.js'></script>
+	<script type="text/javascript" src='../scripts/installDigiCertificate.js'></script>
+</body>
+</html>

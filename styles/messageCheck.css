@@ -1,0 +1,170 @@
+﻿.telephoneno,.checkcode{
+	width:100%;
+	height:1rem;
+	line-height:1rem;
+	padding-left: 0.3rem;
+	margin-top:0.2rem;
+	border-top:1px solid #d7d7d7;
+	border-bottom:1px solid #d7d7d7;
+	background-color:#fff;
+	font-size: 0.34rem;
+	position: relative;
+	box-sizing: border-box;
+}
+
+/*光标*/
+.pgb {
+	position: absolute;
+	top: 0.3rem;
+	left: 2.85rem;
+	display: block;
+	display: none;
+	margin-left: .1rem;
+}
+
+.telephoneno .gbb,.checkcode .gbb {
+	float: left;
+	visibility: hidden;
+}
+
+.telephoneno .gb,.checkcode .gb {
+	float: left;
+	height: 0.4rem;
+	display: block;
+}
+.show {
+	display: block;
+}
+
+.checkcode{
+	border-top:none;
+	margin-top: 0;
+	margin-bottom: 0.3rem;
+}
+.std_box .input_title{
+	color:#222;
+	width: 2rem;
+	margin-right: 0.6rem;
+}
+.telephoneno input,.checkcode input{
+	border: none;
+	color: #222;
+}
+.telephoneno input{
+	width: 4.2rem;
+}
+.checkcode input{
+	width: 2.1rem;
+}
+.getcheckcode{
+	width: 1.8rem;
+    height: 0.7rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.35rem;
+    right: 0;
+    border-radius: 0.1rem;
+    line-height: 0.7rem;
+    text-align: center;
+    background-color: #3a83d7;
+	color:#fff;
+	border: 1px solid #3a83d7;
+	margin-right: 0.2rem;
+	font-size: 0.3rem;
+}
+
+.preopenaccount{
+	margin-top: 0.5rem;
+	width: 100%;
+    font-size: 0.32rem;
+    color: #999;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+}
+
+.precondition{
+	width: 100%;
+    text-align: center;
+    margin-top:0.2rem;
+    font-size:0.32rem;
+	color: #999;
+	padding: 0 0.15rem;
+	box-sizing: border-box;
+	margin-top: 0.25rem;
+}
+.precondition ul li{
+	float: left;
+	display: block;
+	width:33.33%;
+	color:#999;
+	text-align: center;
+}
+
+.precondition ul li img{
+	width:0.8rem;
+	height: 0.6rem;
+}
+.precondition ul li p{
+	margin-top: 0.2rem;
+	font-size: 0.32rem;
+}
+.supportbank{
+    width: 100%;
+    color: #3a83d7;
+    text-align: center;
+    bottom: 0.3rem;
+    margin-top: 0.3rem;
+    font-size: 0.32rem;
+}
+.bankicon{
+	width: 100%;
+    padding:0.3rem;
+    bottom: 0;
+	background-color:#eee;
+	position: absolute;
+	z-index: 11;
+    overflow-y:scroll;
+    font-size: 0.32rem;
+    box-sizing: border-box;
+}
+.bankicon ul li{
+	
+	padding: 0.1rem 0;
+}
+.bankicon ul li.bank_box{
+	width: 50%;
+	float: left;
+}
+.bankicon ul li img{
+	width:0.64rem;
+	height:0.32rem;
+	margin-right: 0.2rem;
+}
+.nextstep{
+	background-color:#fff;
+	color:#999;
+	border:1px solid #d7d7d7
+}
+.bankicon ul li ol{
+	font-size: 0;
+}
+.bankicon ul li ol li{
+	font-size: 0.32rem;
+	color: #666;
+	overflow: hidden;
+	text-overflow:ellipsis; 
+	white-space:nowrap; 
+	word-break:keep-all; 
+}
+#olone{
+	padding-left: 0.3rem;
+}
+#oltwo{
+	padding-left: 0.3rem;
+}
+.bankicon p{
+	font-size: 0.34rem;
+    color: #222;
+    margin-bottom: 0.4rem;
+}

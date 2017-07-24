@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>开户结果</title>
+	<script type="text/javascript">
+    		(function(doc, win, undefined) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(clientWidth === undefined) return;
+						docEl.style.fontSize =(clientWidth / 750)*100 + 'px';
+						docEl.style.display = "block";
+					};
+				if(doc.addEventListener === undefined) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+    </script>
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/OpenAccountResult.css">
+</head>
+<body>
+	<header>
+		<div class="title">
+			<span id="backTo"></span>
+			<span id="khResultName">开户结果</span>
+		</div>
+	</header>
+	<!-- 开户结果页面 -->
+	<div class="wrap">
+	<div id="openAccount1">
+		<div id="success" class="hide">
+			<div class="cowPic" ><img src="../images/OpenAccountResult/successcow.png" id="successcow"></div>
+			<div class="submit">
+				<span>开户申请已提交！</span>
+			</div>
+			<div class="tipmsg">
+				<p>亲，我们将在
+					<span class="numstyle">1-3个交易日</span>
+					内短信通知您开户结果。您可以使用“账户”->“查询开户进度”中查询您的开户结果。
+				</p>
+			</div>
+		</div>
+		<div id="faild" class="hide">
+			<div class="cowPic"><img src="../images/OpenAccountResult/failcow.png" id="failcow"></div>
+			<div class="submit">
+				<span>开户申请提交失败!</span>
+			</div>
+			<div class="tipmsg">
+				<p>您提交的资料可能不完整,请重新进入开户，补充完整后再次提交审核!</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 进度查询页面 -->
+	<div class="hide"  id="statusInquiry">
+		<div class="titleAudit">
+			<span></span>
+		</div>
+		<div class="titleSecond">
+			<span>您的开户申请正在审核中。</span>
+		</div>
+		<div class="tableMsg">
+			<table>
+				<tr>
+					<td>客户姓名</td>
+					<td id="nameTr" colspan="2"></td>
+				</tr>
+				<tr>
+					<td>资金账户</td>
+					<td id="moneyTr"></td>
+					<td id="copyFund" class="copyFundborder hide">
+						<div class="copyFund" onclick="copyInfo();">复制</div>
+					</td>
+				</tr>
+				<tr>
+					<td>三方存管</td>
+					<td  id="bankTr" colspan="2"></td>
+				</tr>
+				<tr class="branchName hide">
+					<td>营业部</td>
+					<td id="saleTr" colspan="2"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="calltelephone" ><span>拨打客服热线</span></div>
+	</div>
+	</div>
+	<script type="text/javascript" src='../scripts/zepto.js'></script>
+	<script type="text/javascript" src='../scripts/basic.js'></script>
+	<script type="text/javascript" src='../scripts/OpenAccountResult.js'></script>
+</body>
+</html>

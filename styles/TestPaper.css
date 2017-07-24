@@ -1,0 +1,57 @@
+.wrap{
+	bottom:1.3rem ;
+}
+.fixed{
+	position: fixed;
+	bottom: 0;
+	height: 1.3rem;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.fixed .nextstep{
+	margin: 0.2rem auto 0.3rem;
+}
+.contentQA{
+    width: 100%;
+    padding: 0.2rem;
+    padding-top: 0;
+    box-sizing: border-box;  
+   	background-color: #fff;
+}
+
+.question{
+	color:#333;
+	font-size: 0.32rem;
+	padding: 0.15rem 0;
+}
+.allchoose{
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    font-size: 0.3rem;
+}
+
+.manychoose{
+    border-bottom: 1px solid #d7d7d7;
+    color: #666;
+}
+.manychoose ul li{
+	background: url(../images/TestPaper/radiouncheck.png) no-repeat left center;
+	background-size: 0.3rem 0.3rem;
+	padding:0.2rem 0.2rem 0.2rem 0.5rem;
+	margin-left: 0.1rem;
+}
+
+.radiobtn{
+	width:10%;
+	float:left;
+}
+
+.nextstepchange{
+
+	background-color: #fff;
+	color:#999;
+}
+
+

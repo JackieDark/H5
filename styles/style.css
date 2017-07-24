@@ -1,0 +1,240 @@
+html,body{
+	background-color:#eee;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;  
+}
+html{
+    display: none;
+}
+header{
+	position: absolute;
+	height: 0.96rem;
+	width: 100%;
+	z-index: 2;
+	top: 0;
+	left: 0;right: 0;
+}
+header .title{
+	width:100%;
+	background-color:#2e6bb1;
+	height: 0.96rem;
+	line-height: 0.96rem;
+	font-size: 0.36rem;
+	color: #fefefe;
+    text-align: center;
+    font-weight: bold;
+}
+.wrap_high{
+	position: absolute;
+	top: 1.16rem;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+.wrap{
+	position: absolute;
+	top: 0.96rem;
+	width: 100%;
+	left: 0;
+	bottom: 0rem;
+	overflow-y: auto;
+}
+#backTo{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.96rem;
+    position: absolute;
+    left: 0.3rem;
+    background: url(../images/back.png) no-repeat center center;
+    background-size: 0.4rem 0.4rem;
+}
+.mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 10;
+}
+.nextstep{
+	width: 6.9rem;
+    height: 0.8rem;
+    background-color: #3a83d7;
+    line-height: 0.8rem;
+    border-radius: 0.1rem;
+    text-align: center;
+    margin: 0.6rem auto 0.3rem;
+    font-size: 0.36rem;
+    color: #fefefe;
+}
+.description {
+	width: 100%;
+	padding: 0.2rem 0.3rem;
+	box-sizing: border-box;
+}
+.top_tip {
+	font-size: 0.32rem;
+	color: #999;
+}
+/**提示信息*/
+.tip_content{
+	color: #999;
+	font-size: 0.34rem;
+	padding: 0 0.3rem;
+}
+.tip_content a,.tip_content span{
+	color:#3a83d7;
+	text-decoration:underline;
+}
+.infoDiv,.infoOtherDiv,.accountIntegrityInfo,.controleshow,.transaction,.bankdiv{
+	width:100%;
+    border: 1px solid #d7d7d7;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+.std_box{
+	width:100%;
+	height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    font-size: 0.34rem;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+.std_box input{
+	width: 4.2rem;
+	border:none;
+	color:#333;
+}
+.std_box label{
+	width: 1.6rem;
+    display: inline-block;
+	color:#333;
+}
+.infoDiv div,.industryEducation,.accountIntegrity,.salesdepartment,.consultation,.shanghaiA,.shenzhenA{
+	width:100%;
+	height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    font-size: 0.34rem;
+    background-color: #fff;
+    position: relative;
+}
+.infoDiv div{ position:static;}
+.signal{
+	box-sizing: border-box;
+}
+.infoDiv input,.signal input,.styled-select select,.signal input,.address input{
+	width: 4.7rem;
+	border:none;
+	color:#333;
+}
+
+.infoDiv label,.signal label,.industryEducation label,.accountIntegrity label,.signal label,.salesdepartment label,.address label{
+    width: 1.6rem;
+    display: inline-block;
+	color:#999;
+}
+.industryEducation{
+	position: relative;
+}
+.infoDiv span,.address span{
+	color:#333;
+}
+.styled-select {
+	width:5rem;
+	height: 1rem;
+	overflow: hidden;
+	float: right;
+	color: #333;
+}
+.styled-select select{
+ 	-webkit-appearance: none;
+ 	appearance: none;
+ 	background-color: #fff;
+}
+.rightArrow{
+    display: inline-block;
+    width: 0.32rem;height: 0.32rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -0.16rem;
+    margin-right: 0.3rem;
+    background: url(../images/select_arrow.png) no-repeat center center;
+    background-size: 0.32rem 0.32rem;
+}
+.imgsize{ width:0.32rem;  height:0.32rem;}
+.cowPic{
+	width:100%;
+	text-align: center;
+	margin-top:1.5rem;
+}
+
+.cowPic img{
+	width:1rem;
+	height:1.6rem;
+}
+.showDetail{
+    width: 6.9rem;
+    height: 85%;
+    padding: 0.4rem 0.2rem;
+    margin-left: 0.3rem;
+    position: absolute;
+    border-radius: 0.1rem;
+    top: 0.96rem;
+    z-index:20;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.topclose{
+	position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(../images/AgreementSign/close.png) no-repeat center center;
+    background-size: contain;
+    background-color: #fff;
+    z-index: 10;
+}
+.certificate {
+    font-size: 0.32rem;
+    display: block;
+    color: #333;
+    box-sizing: border-box;
+    margin: 0.2rem 0.3rem 0 0.3rem;
+}
+.certificate input {
+	width: 0.34rem;
+	height: 0.34rem;
+	position: relative;
+	top: 1px;
+	margin-right: 0.05rem;
+}
+.certificate label{
+	line-height: 0.42rem;
+	display: inline-block;
+	height: 0.42rem;
+	background: url(../images/openThirdPartyAccount/agree_icon_check.png) no-repeat left center;
+    background-size:0.4rem 0.4rem;
+    padding-left: 0.5rem;
+}
+.certificate a {
+	color: #3a83d7;
+	text-decoration: underline;
+}

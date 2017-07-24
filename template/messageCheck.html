@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>手机验证</title>
+	<script type="text/javascript">
+    		(function(doc, win, undefined) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(clientWidth === undefined) return;
+						docEl.style.fontSize =(clientWidth / 750)*100 + 'px';
+						docEl.style.display = "block";
+					};
+				if(doc.addEventListener === undefined) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+    </script>
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/messageCheck.css">
+</head>
+<body>
+	<header>
+		<div class="title">
+			<span id="backTo"></span>
+			<span>手机验证</span>
+		</div>
+	</header>
+	<div class="wrap">
+	<div class="hr_20">
+	</div>
+	<div class="telephoneno std_box">
+		<label class="input_title">手机号</label>
+		<input class="tel" placeholder="请输入手机号" type="text"  readonly/>
+		<span class="pgb">
+			<p class="gbb"></p>
+			<img class="gb" src="../images/setPassword/gb.gif">
+		</span>
+	</div>
+
+	<div class="checkcode std_box">
+		<label class="input_title">短信验证码</label>
+		<input  class="code" type="text" placeholder="请输入验证码" readonly  maxlength="6"/>
+		<div class="getcheckcode"><span>获取验证码</span></div>
+		<span class="pgb">
+			<p class="gbb"></p>
+			<img class="gb" src="../images/setPassword/gb.gif">
+		</span>
+	</div>
+	<div class="tipmsg hide">
+		<p class="tip_content">验证码已发送,请留意手机短信</p>
+	</div>
+	<div class="tipmsg2">
+		<p class="tip_content">如收不到验证码，请拨打客服热线<a href="javascript:;"></a></p>
+	</div>
+
+	<div class="nextstep"><span>下一步</span></div>
+	<h3 class="preopenaccount">开户前请准备好</h3>
+	<div class="precondition">
+		<ul class="clearfix">
+			<li><img src="../images/messageCheck/idcard.png" /><p>二代身份证</p></li>
+			<li><img src="../images/messageCheck/bankcard.png" /><p>银行卡</p></li>
+			<li><img src="../images/messageCheck/wifi.png"  /><p>3G及以上/Wifi</p></li>
+		</ul>
+	</div>
+	<div class="mask hide">&nbsp;</div>
+    <div class="bankicon hide">
+    	<p>支持的银行卡</p>
+		<ul>
+			<li class="bank_box"><ol id="olone"></ol></li>
+			<li class="bank_box"><ol id="oltwo"></ol></li>
+		</ul>
+	</div>
+
+	<div class="supportbank"><span>支持的银行卡</span></div>
+	</div>
+	<script type="text/javascript" src='../scripts/zepto.js'></script>
+	<script type="text/javascript" src='../scripts/basic.js'></script>
+	<script type="text/javascript" src='../scripts/configure.js'></script>
+	<script type="text/javascript" src='../scripts/messageCheck.js'></script>
+</body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>选择营业部</title>
+	<script type="text/javascript">
+    		(function(doc, win, undefined) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(clientWidth === undefined) return;
+						docEl.style.fontSize =(clientWidth / 750)*100 + 'px';
+						docEl.style.display = "block";
+					};
+				if(doc.addEventListener === undefined) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+    </script>
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/updateOpenBranch.css">
+</head>
+<body>
+	<header>
+		<div class="title">
+			<span id="backTo"></span>
+			<span>选择营业部</span>
+		</div>
+	</header>
+	<div class="wrap_high">
+	<div class="infoOtherDiv">
+		<div class="salesdepartment">
+			<label>营业部</label>
+			<div class="styled-select">
+				<select id="salesdepartment"></select>
+				<span class="rightArrow"></span>
+			</div>
+		</div>
+		<div class="address clearfix hide">
+			<label>地址</label>
+			<p class="addr"></p>
+		</div>
+    </div>
+
+	<div class="signal hide">
+		<label>暗号</label>
+		<input type="text"  placeholder="请输入推荐人暗号"/>
+	</div>
+
+	<div class="nextstep"><span>下一步</span></div>
+	</div>
+	<script type="text/javascript" src='../scripts/zepto.js'></script>
+	<script type="text/javascript" src='../scripts/basic.js'></script>
+	<script type="text/javascript" src='../scripts/updateOpenBranch.js'></script>
+</body>
+</html>

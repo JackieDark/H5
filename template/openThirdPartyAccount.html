@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>三方存管</title>
+	<script type="text/javascript">
+    		(function(doc, win, undefined) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(clientWidth === undefined) return;
+						docEl.style.fontSize =(clientWidth / 750)*100 + 'px';
+						docEl.style.display = "block";
+					};
+				if(doc.addEventListener === undefined) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+			})(document, window);
+    </script>
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/openThirdPartyAccount.css">
+</head>
+<body>
+	<header>
+		<div class="title">
+			<span id="backTo"></span>
+			<span>三方存管</span>
+		</div>
+	</header>
+	<div class="wrap">
+	<div class="description">
+			<p class="top_tip" style="text-indent: 0;">选择开户银行</p>
+	</div>
+	<div class="bankdiv">
+		<div class="choosebank std_box">
+				<label>选择银行</label>
+				<div class="styled-select">
+					<select id="bankList">
+						<option>点击选择开户银行<option/>
+					</select>
+			    </div>
+			    <span class="rightArrow"></span>
+		</div>
+		<div class="banknum hide std_box">
+			<label>银行卡号</label>
+			<input type="text"  placeholder="请输入银行账号" id="bankNum" maxlength="19"/>
+		</div>
+		<div id="bankpsw" class="bankpsw hide std_box">
+			<label>密码</label>
+			<span id="psword">
+				<span class="psw_tip" style="color: #999">请输入<span style="color:red">银行卡密码</span></span>
+			    <p style="display:none;"></p>
+			    <p style="display:none;"></p>
+				<img class="pswordGB" src="../images/setPassword/gb.gif">
+			</span>
+			<span id="showPsw" class="unview forview">
+				<img src="../images/setPassword/unview.png">
+			</span>
+		</div>
+	</div>
+	<div class="warnmsg">
+		<span id="isSupportMutiQs"></span>
+		<span id="boundway"></span>
+	</div>
+
+	<!--<div class="mask hide"></div>-->
+	
+	<div class="description">
+		<p class="top_tip" style="text-indent: 0;">签署三方存管协议</p>
+	</div>
+	<div class="agreement std_box">
+		<span id="agreementName">《三方存管协议》</span>
+		<span class="rightArrow"></span>
+	</div>
+    <div class="agreementList">
+	</div>
+	<div class="certificate"><input type="checkbox" checked style="display: none;" id="agree"><label for="agree">我已知晓并同意签署以上协议</label></div>
+	<div class="nextstep" onclick="isGotoNextstep();">
+		<span>下一步</span>
+	</div>
+	<div class="mask hide"></div>
+	<!-- 银行修改提示框 -->
+	<div class="bankTipMsg hide">
+		<div class="dialogtitle">
+			<span>请确认您的存管银行</span>
+		</div>
+		<div class="imgbankno">
+			<ul class="imgbanknoul">
+				<li>
+					<img src="../images/openThirdPartyAccount/close.png"  id="dialogImg"/>
+				</li>
+				<li class="outbox">
+					<ul class="inner_box">
+						<li class="bankName bankNamehtml">民生银行</li>
+						<li class="bankNo hide">0000 0000 0000 0000</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="bankPsw hide std_box">
+			<label>密码</label>
+			<input type="password"  id="dialogpsw" readonly/>
+			<span id="showdialogPsw" class="unview forview">
+				<img src="../images/setPassword/unview.png">
+			</span>
+		</div>
+		<div class="bankTip hide">
+			<ul>
+				<li id="dialogbankPsw" class="hide">
+					<span></span>
+				</li>
+				<li>1.咨询
+					<span class="bankNamehtml"></span>客服
+					<span id="serviceTel"></span>
+				</li>
+				<li>2.更换其他银行卡</li>
+			</ul>	
+		</div>
+		<div class="dialogbtn">
+			<div class="turnback" id="turnback">返回修改</div>
+			<div class="suretoNext" id="suretoNext">确定</div>
+		</div>
+	</div>
+	<!-- 遮罩层  -->
+	</div>
+	<div class="showDetail hide" id="showDetail">
+		<div class="topclose" onclick="closeDetail();">
+		</div>
+		<div class="econtractContent" id="econtractContent">
+		</div>
+	</div>
+	<div class="hide"><img src="../images/close.png"  class="imgsize" id="cancel"/></div>
+	<script type="text/javascript" src='../scripts/zepto.js'></script>
+	<script type="text/javascript" src='../scripts/basic.js'></script>
+	<script type="text/javascript" src='../scripts/openThirdPartyAccount.js'></script>
+	<script type="text/javascript" src='../scripts/utilMD5.js'></script>
+</body>
+</html>

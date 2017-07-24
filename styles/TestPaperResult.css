@@ -1,0 +1,109 @@
+.titleAudit{
+    width: 100%;
+    font-size: 0.32rem;
+    text-align: center;
+    margin-top: .8rem;
+    color: #333;
+    font-weight: bold;
+}
+.tableMsg{
+    width: 90%;
+    margin-top: .33rem;
+    text-align: center;
+    margin-left: 5%;
+    border: 1px solid #d7d7d7;
+    border-radius: 0.1rem;
+    background-color: #fff;
+    border-bottom: none;
+    position: absolute;
+    font-size: 0.4rem;
+}
+.score{
+    width: 90%;
+    font-size: .3rem;
+    color: #666;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+#riskGrade a {
+    color: #3a83d7;
+    text-decoration: dashed;
+}
+
+table{
+    width:100%;
+    height: 100%;
+    color:#333;
+    text-align: left;
+}
+
+table tr td:first-child{
+    border-right: 1px solid #d7d7d7;
+    width: 40%;
+}
+table tr td{
+    padding: 0.2rem;
+    font-size: 0.28rem;
+}
+table tr{
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.tipbankMsg{
+    font-size: .3rem;
+    color: #f82929;
+    margin-left: .4rem;
+    margin-top: 55%;
+    width: 90%;
+}
+
+.certificate a{text-decoration:none;}
+
+.nextstep{margin-top: .5rem;}
+
+.DigitalAgreement {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 6.9rem;
+    height: 80%;
+    left: 50%;
+    margin-left: -3.45rem;
+    background: #fff;
+    padding: 0.1rem 0.3rem;
+    border: 1px solid #000;
+    border-radius: 0.07rem;
+    background: #F3F3F3;
+    top: 1.5rem;
+    box-sizing: border-box;
+}
+
+.DigitalAgreement .title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 0.36rem;
+    position: relative;
+}
+
+.DigitalAgreement .title span {
+    position: absolute;
+    top: -0.3rem;
+    right: -0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(../images/close.png) no-repeat center center;
+    background-size: contain;
+    background-color: #fff;
+    z-index: 20;
+}
+
+
+.DigitalAgreement .content {
+    font-size: 0.26rem;
+    line-height: 0.44rem;
+    height: 95%;
+    overflow: auto;
+}

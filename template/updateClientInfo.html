@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>核对并完善资料</title>
+	<script type="text/javascript">
+        (function(doc, win, undefined) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if(clientWidth === undefined) return;
+                    docEl.style.fontSize =(clientWidth / 750)*100 + 'px';
+                    docEl.style.display = "block";
+                };
+            if(doc.addEventListener === undefined) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false)
+        })(document, window);
+	</script>
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/style.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/updateClientInfo.css">
+</head>
+<body>
+<header>
+	<div class="title">
+		<span id="backTo"></span>
+		<span>核对并完善资料</span>
+	</div>
+</header>
+<div class="wrap">
+	<div class="component">
+		<p class="top_tip">身份证信息</p>
+	</div>
+
+	<div class="infoDiv">
+		<div>
+			<label>姓名</label>
+			<input type="text" id="name" maxlength="16" onfocus="importFont(this.id);"/>
+		</div>
+		<div>
+			<label>身份证号</label>
+			<input type="text" id="idcard" onfocus="importFont(this.id);"/>
+		</div>
+		<div class="valuedate">
+			<label>有效期</label>
+			<input type="text" id="startDate" onclick="getShowDatePick('showDatePickStart');" onblur="startTime(this.value);" readonly/>-
+			<input type="text" id="endDate" onclick="getShowDatePick('showDatePickEnd');" onblur="endTime(this.value);" readonly/>
+		</div>
+		<div>
+			<label>发证机关</label>
+			<input type="text" id="IssuingAuthority" onfocus="importFont(this.id);"/>
+		</div>
+		<div style="border:none;">
+			<label>证件地址</label>
+			<input type="text" id="address" onfocus="importFont(this.id);"/>
+		</div>
+		<div style="border:none;display:none;">
+			<label>联系地址</label>
+			<input type="text" id="contactAddress" onfocus="importFont(this.id);"/>
+		</div>
+	</div>
+	<div class="component">
+		<p class="top_tip">其他信息</p>
+	</div>
+	<div class="infoOtherDiv">
+		<div class="industryEducation">
+			<label>学历</label>
+			<div  class="styled-select" >
+				<select id="educational">
+					<option>请选择</option>
+				</select>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+		<div class="industryEducation">
+			<label>行业</label>
+			<div class="styled-select">
+				<select id="industry">
+					<option>请选择</option>
+				</select>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+		<div class="industryEducation">
+			<label>职业</label>
+			<div class="styled-select">
+				<select id="professional">
+					<option>请选择</option>
+				</select>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+		<div class="industryEducation">
+			<label>职务</label>
+			<div class="styled-select">
+				<select id="duty">
+					<option>请选择</option>
+				</select>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+		<div class="workUnit">
+			<label>工作单位</label>
+			<input type="text" id="workUnit" onfocus="importFont(this.id);" placeholder="必填"/>
+		</div>
+	</div>
+	<div class="component">
+		<p class="top_tip">账户所属及诚信信息</p>
+	</div>
+	<div class="accountIntegrityInfo">
+		<div class="accountIntegrity">
+			<label style="width: 1.8rem;">账户受益人</label>
+			<div  class="styled-select" style="width: 4.4rem;" >
+				<select id="beneficiaryPerson">
+					<option value="0">本人</option>
+					<option value="1">非本人</option>
+				</select>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+		<div class="accountIntegrity">
+			<label style="width: 1.8rem;">实际控制人</label>
+			<div class="styled-select" style="width: 4.4rem;" >
+				<select id="controlNaturePerson">
+					<option value="0">本人</option>
+					<option value="1">非本人</option>
+				</select>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+		<div class="accountIntegrity">
+			<label style="width: 2.2rem;">税收居民身份</label>
+			<div class="styled-select" style="width: 4.4rem;overflow: inherit;">
+				<select id="taxResidents">
+					<option value="1">中国税收居民</option>
+					<option value="2">非居民</option>
+					<option value="3">既是中国税收居民又是其他税收管辖区居民</option>
+				</select>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+		<div class="accountIntegrity">
+			<label style="width: 2.2rem;">不良诚信记录</label>
+			<div  id="integrity" class="styled-select" style="width: 4.4rem;">
+				<input type="text" value="无" readonly>
+			</div>
+			<span class="rightArrow"></span>
+		</div>
+	</div>
+	<div id="integrityDiv">
+		<ul>
+			<li onClick="integritySelect(this)">无</li>
+		</ul>
+	</div>
+	<div class="nextstep">下一步</div>
+	<div class="mask hide"></div>
+	<div class="hide"><img src="../images/close.png"  class="imgsize" id="nameCloseImg"/></div>
+	<div class="hide"><img src="../images/close.png"  class="imgsize" id="idCardCloseImg"/></div>
+	<div class="hide"><img src="../images/close.png"  class="imgsize" id="issuingCloseImg"/></div>
+	<div class="hide"><img src="../images/close.png"  class="imgsize" id="addressCloseImg"/></div>
+	<div class="hide"><img src="../images/close.png"  class="imgsize" id="contactAddressCloseImg"/></div>
+	<div class="hide"><img src="../images/close.png"  class="imgsize" id="workUnitImg"/></div>
+</div>
+
+<script type="text/javascript" src='../scripts/zepto.js'></script>
+<script type="text/javascript" src='../scripts/basic.js'></script>
+<script type="text/javascript" src='../scripts/updateClientInfo.js'></script>
+</body>
+</html>

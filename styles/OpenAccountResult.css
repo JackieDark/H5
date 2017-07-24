@@ -1,0 +1,122 @@
+.submit{
+	width: 100%;
+    text-align: center;
+    line-height:0.8rem;
+    font-size: 0.4rem;color: #3a83d7;
+    margin-top: 0.2rem;
+}
+
+.tipmsg{color: #666; line-height:0.56rem;font-size: 0.4rem;
+padding: 0 0.3rem;
+}
+.tipmsg p{
+	text-indent: 0.8rem;
+}
+
+.numstyle{
+	color: #f64d54;
+}
+
+.telephone{
+	color: #3a83d7;
+    font-size: 0.32rem;
+}
+
+.titleAudit{
+    width: 100%;
+    font-size: 0.32rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.titleSecond{
+	width: 100%;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #666;
+    margin-top:0.3rem;
+}
+
+.titleThird{
+	width: 100%;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.shareLink{
+	width: 100%;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.shareLink img{
+	width:45px;height:45px;
+}
+
+
+.tableMsg{
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    border: 1px solid #d7d7d7;
+    border-radius: 0.1rem;
+    background-color: #fff;
+    margin-top:5%;
+    border-bottom: none;
+    position: absolute;
+    font-size: 0.4rem;
+}
+
+table{
+	width:100%;
+	height: 100%;
+	color:#333;
+}
+
+table tr td:first-child{
+	border-right: 1px solid #d7d7d7;
+    width: 40%;
+}
+table tr td{
+	padding: 0.2rem 0;
+	font-size: 0.28rem;
+}
+table tr{
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.calltelephone{
+    width: 90%;
+    position: absolute;bottom:20%;left: 5%;
+    text-align: center;line-height: 0.8rem;color: #fff;
+    background-color: #3a83d7;
+    border-radius: 0.1rem;
+    font-size: 0.32rem;
+}
+
+.downloadTPY{
+    width: 90%;height: 35px;
+    position: absolute;bottom:20%;left: 5%;
+    text-align: center;line-height: 35px;color: #fff;
+    background-color: #3a83d7;
+    border-radius: 5px;
+    margin-bottom:45px;
+}
+
+
+.copyFundborder{
+    border-top:1px solid #d7d7d7;
+}
+
+.copyFund{
+    color: #fff;
+    background-color: #3a83d7;
+    height: 20px;
+    font-size: 0.24rem;
+    margin-right: 5px;
+    border-radius: 5px;
+}
